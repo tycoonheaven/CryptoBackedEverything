@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: cryptobackedeverything
+    runtime: node
+    repo: https://github.com/tycoonheaven/CryptoBackedEverything
+    branch: master
+    buildCommand: npm install
+    startCommand: npm start
+    plan: free

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" fill="none">
+  <rect width="1200" height="900" rx="48" fill="#0F1A31"/>
+  <path d="M205 535c89-18 136-84 211-110 38-13 136-18 197 29l207 157c25 19 17 59-13 67l-111 31H286c-69 0-120-63-97-124l16-43Z" fill="#F4B73F"/>
+  <path d="M235 523c77-16 122-72 188-96 31-12 116-16 169 24l175 132c19 15 13 46-11 52l-90 25H328c-57 0-100-52-81-103l-12-34Z" fill="#FF8A3D"/>
+  <path d="M734 607h149c66 0 120 54 120 120v4H734v-124Z" fill="#1C2B4D"/>
+  <circle cx="341" cy="690" r="71" fill="#E8EEF9"/>
+  <circle cx="819" cy="690" r="71" fill="#E8EEF9"/>
+  <circle cx="341" cy="690" r="33" fill="#9FB0CF"/>
+  <circle cx="819" cy="690" r="33" fill="#9FB0CF"/>
+  <rect x="120" y="126" width="332" height="48" rx="24" fill="#162848"/>
+  <text x="160" y="159" fill="#7EC8FF" font-family="Arial, sans-serif" font-size="28" font-weight="700">QUIET_RUNNER_SHOE</text>
+  <text x="122" y="808" fill="#ECF2FF" font-family="Arial, sans-serif" font-size="40" font-weight="700">BUYER_BOUND_IMAGE_OBJECT</text>
+</svg>

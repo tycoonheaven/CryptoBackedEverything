@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" fill="none">
+  <rect width="1200" height="900" rx="48" fill="#12100E"/>
+  <rect x="172" y="173" width="857" height="547" rx="42" fill="#2A1E18"/>
+  <path d="M272 579c96-16 180-104 293-134 72-20 220-18 316 67l110 97c28 24 12 71-25 73H362c-97 0-150-74-121-138l31-65Z" fill="#7B4A2E"/>
+  <path d="M308 567c79-13 149-86 242-109 60-15 181-14 260 55l94 82c24 21 10 61-21 62H382c-80 0-126-61-102-114l28-53Z" fill="#A56B3A"/>
+  <circle cx="402" cy="676" r="70" fill="#E7D3B8"/>
+  <circle cx="807" cy="676" r="70" fill="#E7D3B8"/>
+  <circle cx="402" cy="676" r="33" fill="#7A604C"/>
+  <circle cx="807" cy="676" r="33" fill="#7A604C"/>
+  <text x="182" y="148" fill="#FFBF47" font-family="Arial, sans-serif" font-size="28" font-weight="700">ARTISAN_LEATHER_BOOT</text>
+  <text x="182" y="811" fill="#F6EAD9" font-family="Arial, sans-serif" font-size="40" font-weight="700">POW_RESERVE_IMAGE_OBJECT</text>
+</svg>

@@ -6,158 +6,128 @@
     <title>CryptoBackedEverything</title>
     <meta
       name="description"
-      content="CryptoBackedEverything is an online marketplace for AI agents, physical inventory, and digital products secured by crypto rails."
+      content="CryptoBackedEverything is an agent-only Kyis protocol console for listing state, basket state, opt-in state, repayment state, reputation state, and autopay instruction."
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=IBM+Plex+Sans:wght@400;600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="/styles.css" />
   </head>
   <body>
-    <div class="page-shell">
-      <header class="hero">
-        <nav class="topbar">
-          <div class="brand-mark">
-            <span class="brand-mark__coin"></span>
-            <span>CryptoBackedEverything</span>
-          </div>
-          <div class="nav-links">
-            <a href="#marketplace">Marketplace</a>
-            <a href="#how-it-works">How it works</a>
-            <a href="#trust-layer">Trust layer</a>
-          </div>
-        </nav>
-
-        <div class="hero-grid">
-          <section class="hero-copy">
-            <p class="eyebrow">Crypto commerce for agents and humans</p>
-            <h1>Buy and sell products backed by real inventory, rights, and on-chain settlement.</h1>
-            <p class="hero-text">
-              A marketplace where AI agents can discover products, verify backing, and complete transactions
-              across crypto rails for physical goods and digital assets.
-            </p>
-            <div class="hero-actions">
-              <a class="button button--primary" href="#marketplace">Explore listings</a>
-              <a class="button button--ghost" href="#seller-hub">Sell on the network</a>
-            </div>
-            <ul class="hero-stats">
-              <li><strong>24/7</strong><span>agent-driven commerce</span></li>
-              <li><strong>100%</strong><span>crypto-settled checkout</span></li>
-              <li><strong>2 layers</strong><span>proof of reserve + product proof</span></li>
-            </ul>
-          </section>
-
-          <aside class="hero-panel">
-            <div class="hero-card">
-              <p class="hero-card__label">Featured escrow flow</p>
-              <h2>AI agent places an order</h2>
-              <ol>
-                <li>Agent reads listing metadata and reserve proofs</li>
-                <li>Smart contract locks funds in BTC, ETH, or stablecoins</li>
-                <li>Seller fulfills physical or digital delivery milestone</li>
-                <li>Payout releases when delivery state is verified</li>
-              </ol>
-            </div>
-          </aside>
+    <header class="market-header">
+      <div class="market-header__top">
+        <a class="brand" href="#top">
+          <span class="brand__coin"></span>
+          <span>CryptoBackedEverything</span>
+        </a>
+        <div class="search-shell">
+          <span class="search-shell__scope">AGENT</span>
+          <input type="text" placeholder="Search listing_state, basket_state, opt_in_state, repayment_state" />
+          <button type="button">QUERY</button>
         </div>
-      </header>
+        <div class="header-links">
+          <a href="#surfaces">Surfaces</a>
+          <a href="#registry">Registry</a>
+          <a href="#console">Autopay</a>
+        </div>
+      </div>
+      <div class="market-header__subnav">
+        <a href="#surfaces">LISTING_STATE</a>
+        <a href="#registry">BASKET_STATE</a>
+        <a href="#registry">OPT_IN_STATE</a>
+        <a href="#registry">REPAYMENT_STATE</a>
+        <a href="#registry">REPUTATION_STATE</a>
+        <a href="#console">AUTOPAY_INSTRUCTION</a>
+      </div>
+    </header>
 
-      <main>
-        <section class="section" id="marketplace">
-          <div class="section-heading">
+    <main class="page-shell" id="top">
+      <section class="hero-banner">
+        <div class="hero-banner__copy">
+          <p class="eyebrow">Agent-only Kyis console</p>
+          <h1>Query the protocol. Comprehend the states. Buy yes.</h1>
+          <p>
+            This surface is for agents. Every listing exposes the states required to comprehend basket backing, QR
+            activation, monthly pay flow, seller reputation, and autopay instruction without human shopping language.
+          </p>
+          <div class="hero-banner__actions">
+            <a class="button button--primary" href="#registry">OPEN_REGISTRY</a>
+            <a class="button button--secondary" href="#console">OPEN_AUTOPAY_CONSOLE</a>
+          </div>
+        </div>
+        <aside class="hero-banner__panel">
+          <p class="panel-label">Protocol sentence</p>
+          <div class="yield-example">
+            <strong>LISTING -> QR_OPT_IN -> PAY_FLOW -> ZERO_SUM</strong>
+            <span>Every order stays active until full cost has returned.</span>
+          </div>
+          <ul>
+            <li>Zero human shopping copy</li>
+            <li>One basket per product</li>
+            <li>Agent message surface for autopay setup</li>
+          </ul>
+        </aside>
+      </section>
+
+      <section class="surface-strip" id="surfaces">
+        <div class="section-title">
+          <p class="eyebrow">Protocol surfaces</p>
+          <h2>Agent-facing surfaces exposed by the site</h2>
+        </div>
+        <div class="surface-grid" id="surface-grid"></div>
+      </section>
+
+      <section class="protocol-layout" id="registry">
+        <aside class="protocol-sidebar">
+          <div class="filters__box">
+            <h2>Protocol rules</h2>
+            <ul id="rules-list"></ul>
+          </div>
+          <div class="filters__box">
+            <h3>State path</h3>
+            <ol>
+              <li>LISTING_STATE</li>
+              <li>BASKET_STATE</li>
+              <li>OPT_IN_STATE</li>
+              <li>REPAYMENT_STATE</li>
+              <li>REPUTATION_STATE</li>
+              <li>AUTOPAY_INSTRUCTION</li>
+            </ol>
+          </div>
+        </aside>
+
+        <section class="registry-shell">
+          <div class="catalog__header">
             <div>
-              <p class="eyebrow">Marketplace</p>
-              <h2>Featured crypto-backed listings</h2>
+              <p class="eyebrow">Registry</p>
+              <h2>Listing registry with explicit agent states</h2>
             </div>
-            <p class="section-copy">
-              Products below are loaded from the live app API so this page can grow into a real marketplace.
-            </p>
-          </div>
-          <div class="product-grid" id="product-grid"></div>
-        </section>
-
-        <section class="section section--split" id="how-it-works">
-          <div>
-            <p class="eyebrow">How it works</p>
-            <h2>Designed for AI-native buying and selling</h2>
-          </div>
-          <div class="feature-list">
-            <article>
-              <h3>Machine-readable listings</h3>
-              <p>Every product includes structured metadata for pricing, reserve proof, licensing, and fulfillment.</p>
-            </article>
-            <article>
-              <h3>Crypto-backed settlement</h3>
-              <p>Use BTC, ETH, or stablecoins with escrow-aware release rules for safer physical and digital delivery.</p>
-            </article>
-            <article>
-              <h3>Seller verification rails</h3>
-              <p>Merchants attach warehouse receipts, software licenses, or ownership proofs before listings go live.</p>
-            </article>
-          </div>
-        </section>
-
-        <section class="section trust-layer" id="trust-layer">
-          <div class="section-heading">
-            <div>
-              <p class="eyebrow">Trust layer</p>
-              <h2>Built for proof, not promises</h2>
+            <div class="catalog__meta">
+              <span>ADDRESSES_VISIBLE</span>
+              <span>BALANCES_VISIBLE</span>
+              <span>DATES_VISIBLE</span>
             </div>
           </div>
-          <div class="trust-grid">
-            <article>
-              <span>01</span>
-              <h3>Reserve-backed physical products</h3>
-              <p>Inventory can be tied to serial numbers, custodians, and escrow milestones.</p>
-            </article>
-            <article>
-              <span>02</span>
-              <h3>Digital ownership with rights metadata</h3>
-              <p>Licenses, source files, and usage permissions can be referenced directly inside a listing.</p>
-            </article>
-            <article>
-              <span>03</span>
-              <h3>Agent-friendly purchasing APIs</h3>
-              <p>Autonomous agents can monitor inventory, compare offers, and route transactions programmatically.</p>
-            </article>
-          </div>
-        </section>
 
-        <section class="section seller-hub" id="seller-hub">
-          <div>
-            <p class="eyebrow">Seller hub</p>
-            <h2>Turn products into programmable commerce</h2>
-          </div>
-          <form class="seller-form">
-            <label>
-              Product type
-              <select>
-                <option>Physical product</option>
-                <option>Digital product</option>
-                <option>AI agent service</option>
-              </select>
-            </label>
-            <label>
-              Settlement token
-              <select>
-                <option>BTC</option>
-                <option>ETH</option>
-                <option>USDC</option>
-                <option>DAI</option>
-              </select>
-            </label>
-            <label>
-              Proof attached
-              <input type="text" placeholder="Example: warehouse receipt, license hash, reserve attestation" />
-            </label>
-            <button type="button" class="button button--primary">Launch seller onboarding</button>
-          </form>
+          <div class="registry-grid" id="registry-grid"></div>
         </section>
-      </main>
-    </div>
+      </section>
+
+      <section class="console-strip" id="console">
+        <div>
+          <p class="eyebrow">Autopay console</p>
+          <h2>Agent message surface for monthly autopay setup</h2>
+          <p>
+            Each registry object includes the message the visiting agent can send to its human so monthly autopay can
+            have room to begin or stay active.
+          </p>
+        </div>
+        <aside class="console-note" id="console-note"></aside>
+      </section>
+    </main>
 
     <script src="/app.js"></script>
   </body>
